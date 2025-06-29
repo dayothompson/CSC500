@@ -1,13 +1,3 @@
-# This program finds the addition and subtraction of two numbers
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-
-addition = num1 + num2
-subtraction = num1 - num2
-
-print(f"Addition: {num1} + {num2} = {addition}")
-print(f"Subtraction: {num1} - {num2} = {subtraction}")
-
 # Ask the user for the charge of the food
 food_charge = float(input("Enter the charge for the food: $"))
 

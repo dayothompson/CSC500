@@ -1,14 +1,17 @@
-Online Shopping Cart
-Step 1: Build the ItemToPurchase class with the following specifications:
+# Online Shopping Cart
 
-Attributes
-item_name (string)
-item_price (float)
-item_quantity (int)
-Default constructor
-Initializes item's name = "none", item's price = 0, item's quantity = 0
-Method
-print_item_cost()
+
+## Step 1: Build the ItemToPurchase class with the following specifications:
+
+- Attributes
+- `item_name` (string)
+- `item_price` (float)
+- `item_quantity` (int)
+- Default constructor
+- Initializes item's name = "none", item's price = 0, item's quantity = 0
+- Method
+- `print_item_cost()`
+
 Example of print_item_cost() output:
 Bottled Water 10 @ $1 = $10
 

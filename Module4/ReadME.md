@@ -16,6 +16,7 @@ Example of print_item_cost() output:
 Bottled Water 10 @ $1 = $10
 
 
+
 ## Step 2: In the main section of your code, prompt the user for two items and create two objects of the ItemToPurchase class.
 
 Example:
@@ -47,6 +48,7 @@ Enter the item price:
 Enter the item quantity:
 
 10
+
 
 
 ## Step 3: Add the costs of the two items together and output the total cost.

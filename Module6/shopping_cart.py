@@ -112,8 +112,6 @@ class ShoppingCart:
             print(f"{item.item_name}: {item.item_description}")
 
 
-
-
 def print_menu(cart):
     """
     Outputs a menu of options to manipulate the shopping cart.
@@ -137,51 +135,14 @@ def main():
     # Create shopping cart
     cart = ShoppingCart(customer_name, current_date)
     
-    print(f"\nCustomer name: {customer_name}")
-    print(f"Today's date: {current_date}")
-    
     # Menu loop
     while True:
         print_menu(cart)
         choice = input().lower().strip()
         
         if choice == 'q':
-            print("Goodbye!")
+            print("Goodbye!\n")
             break
-        elif choice == 'a':
-            # Add item to cart
-            print("ADD ITEM TO CART")
-            print("Enter the item name:")
-            name = input()
-            print("Enter the item price:")
-            price = float(input())
-            print("Enter the item quantity:")
-            quantity = int(input())
-            print("Enter the item description:")
-            description = input()
-            
-            item = Item(name, price, quantity, description)
-            cart.add_item(item)
-            print("Item added to cart.")
-            
-        elif choice == 'r':
-            # Remove item from cart
-            print("REMOVE ITEM FROM CART")
-            print("Enter name of item to remove:")
-            item_name = input()
-            cart.remove_item(item_name)
-            
-        elif choice == 'c':
-            # Change item quantity
-            print("CHANGE ITEM QUANTITY")
-            print("Enter the item name:")
-            item_name = input()
-            print("Enter the new quantity:")
-            new_quantity = int(input())
-            
-            # Create a temporary item with only the name and new quantity
-            modified_item = Item(item_name, 0, new_quantity, "")
-            cart.modify_item(modified_item)
             
         elif choice == 'i':
             # Output items' descriptions
@@ -194,11 +155,22 @@ def main():
             cart.print_total()
             
         else:
-            print("Invalid option. Please try again.")
+            print("Enter the item name:")
+            name = input()
+            print("Enter the item price:")
+            price = float(input())
+            print("Enter the item quantity:")
+            quantity = int(input())
+            print("Enter the item description:")
+            description = input()
+            
+            item = Item(name, price, quantity, description)
+            cart.add_item(item)
+            print("Item added to cart.")
         
         print()  # Add blank line for readability
         
 
 # Main program
 if __name__ == "__main__":
-    main() 
+    main()

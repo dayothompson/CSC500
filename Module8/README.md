@@ -195,14 +195,3 @@ Enter the new quantity:
 3
 ```
 
-## Project Structure
-The project consists of multiple Python files demonstrating different implementations and examples of the shopping cart system.
-
-## Files Included
-- `shopping_cart.py` - Main implementation
-- `shopping_cart1.py` - Alternative implementation
-- `shopping_cart2.py` - Additional implementation
-- `Discussion/` - Contains example files for discussion purposes
-  - `animal.py`
-  - `company_example.py`
-  - `landlord_example.py` 
